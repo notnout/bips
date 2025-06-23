@@ -55,7 +55,7 @@ KEY_1 OP_CHECKSIG KEY_2 OP_CHECKSIGADD ... KEY_n OP_CHECKSIGADD k OP_NUMEQUAL
 The only change for <tt>sortedmulti_a()</tt> is that the x-only public keys are sorted lexicographically prior to the creation of the output script.
 This sorting is on the keys that are to be put into the output script, i.e. after all extended keys are derived.
 
-===Multiple Extended Keys</tt>===
+===Multiple Extended Keys===
 
 When one or more of the key expressions in a <tt>multi_a()</tt> or <tt>sortedmulti_a()</tt> expression are extended keys, the derived keys use the same child index.
 This changes the keys in lockstep and allows for output scripts to be indexed in the same way that the derived keys are indexed.
